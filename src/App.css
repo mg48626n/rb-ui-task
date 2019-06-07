@@ -1,0 +1,17 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 100%;
+}
+
+.App-header {
+  display: flex;
+  height: 50px;
+  padding: 20px;
+  color: white;
+  background-color: white;
+  box-shadow: 1px 1px 3px 1px #d6d6d6;
+}
+
