@@ -1,7 +1,8 @@
-.App {
-  text-align: center;
-}
+:root {
+  --primaryColor: #af9a7d;
+  --darkGrey: #cfcfcf;
 
+}
 .App-logo {
   height: 100%;
 }
@@ -9,9 +10,87 @@
 .App-header {
   display: flex;
   height: 50px;
-  padding: 20px;
+  padding: 10px;
   color: white;
-  background-color: white;
-  box-shadow: 1px 1px 3px 1px #d6d6d6;
+  /* background-color: white; */
+  box-shadow: 1px 1px 10px 1px #d6d6d6;
 }
 
+.App-body{
+  background-color: #F6F8FA	;
+}
+
+.position{
+  color:#800080;
+  /* font-weight: 700; */
+}
+
+.circle{
+  border-radius: 50%;
+  background: hsl(14, 91%, 55%);
+  color:white;
+  text-align: center;
+}
+
+.trans input{
+  background-color: transparent;
+  border-color: transparent;
+  border-bottom-color: #0a090a;
+  padding: 8px;
+  margin-right: 110px;
+}
+.card-body{
+  clear: both;
+}
+
+
+.img-container {
+  position: relative;
+}
+.img-container img {
+  width: 100%;
+  display: block;
+  transition: var(--mainTransition);
+}
+
+.showmore {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: scale(0);
+  transition: all 0.3s linear;
+}
+.img-container:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+.img-container:hover img {
+  opacity: 0.3;
+}
+.img-container:hover .price-top {
+  opacity: 0;
+}
+.img-container:hover .showmore {
+  transform: translate(-50%, -50%) scale(1);
+}
+.btn-primary {
+  display: inline-block;
+  text-decoration: none;
+  letter-spacing: var(--mainSpacing);
+  color: var(--mainBlack);
+  background: var(--primaryColor);
+  padding: 0.4rem 0.9rem;
+  border: 3px solid var(--primaryColor);
+  transition: var(--mainTransition);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+
+.btn-primary:hover {
+  background: transparent;
+  color: var(--primaryColor);
+}
+.modal-decoration{
+  color:red;
+  font-weight: 700;
+}
